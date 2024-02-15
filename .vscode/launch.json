@@ -1,0 +1,56 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "prakArray",
+            "request": "launch",
+            "mainClass": "prakArray",
+            "projectName": "minggu 1_513f766d"
+        },
+        {
+            "type": "java",
+            "name": "prakFungsi",
+            "request": "launch",
+            "mainClass": "prakFungsi",
+            "projectName": "minggu 1_513f766d"
+        },
+        {
+            "type": "java",
+            "name": "prakPemilihan",
+            "request": "launch",
+            "mainClass": "prakPemilihan",
+            "projectName": "minggu 1_513f766d"
+        },
+        {
+            "type": "java",
+            "name": "prakPerulangan",
+            "request": "launch",
+            "mainClass": "prakPerulangan",
+            "projectName": "minggu 1_513f766d"
+        },
+        {
+            "type": "java",
+            "name": "sainskalkulator",
+            "request": "launch",
+            "mainClass": "sainskalkulator",
+            "projectName": "minggu 1_513f766d"
+        },
+        {
+            "type": "java",
+            "name": "tugas",
+            "request": "launch",
+            "mainClass": "tugas",
+            "projectName": "minggu 1_513f766d"
+        }
+    ]
+}

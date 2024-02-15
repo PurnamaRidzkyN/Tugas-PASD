@@ -17,11 +17,11 @@ public class tugas {
         };
         System.out.print("Masukkan Plat Nomor Anda : ");
         char platNomor = input.next().charAt(0);
-
+        System.out.print("Ini Merupaka Plat Nomor Kota:" );
         for (int i = 0; i < KODE.length; i++) {
             if (platNomor == KODE[i]) {
                 for (int j = 0; j < KOTA[i].length; j++) {
-                    System.out.print("Ini Merupaka Plat Nomor Kota: "+ KOTA[i][j]);
+                    System.out.print( KOTA[i][j]);
                 }
             }
         }

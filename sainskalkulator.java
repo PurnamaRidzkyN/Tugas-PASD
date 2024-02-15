@@ -31,39 +31,36 @@ public class sainskalkulator {
                     System.out.println("Pilihan tidak valid. Silakan pilih kembali.");
                     break;
             }
-            System.out.println("Apakah Sudah Selesai? (y/n) ");
+            System.out.print("\nApakah Sudah Selesai? (y/n) ");
             String selesai = input.next();
-            if (selesai.equalsIgnoreCase("y")){
+            if (selesai.equalsIgnoreCase("y")) {
                 break;
             }
-            input.close();
 
         }
     }
 
     private static void hitungKecepatan() {
         Scanner input = new Scanner(System.in);
-        System.out.println("Masukan Jarak (m): ");
+        System.out.print("Masukan Jarak (m): ");
         double Jarak = input.nextDouble();
-        System.out.println("Masukan Waktu (s): ");
+        System.out.print("Masukan Waktu (s): ");
         double waktu = input.nextDouble();
 
         double Kecepatan = Jarak / waktu;
-        System.out.println("Kecepatan : " + Kecepatan+("m/s"));
-        input.close();
+        System.out.print("Kecepatan : " + Kecepatan + ("m/s"));
 
     }
 
     private static void hitungJarak() {
         Scanner input = new Scanner(System.in);
-        System.out.println("Masukan Kecepatan (m/s): ");
+        System.out.print("Masukan Kecepatan (m/s): ");
         double Kecepatan = input.nextDouble();
-        System.out.println("Masukan Waktu (s): ");
+        System.out.print("Masukan Waktu (s): ");
         double waktu = input.nextDouble();
 
         double jarak = Kecepatan * waktu;
-        System.out.println("Kecepatan : " + jarak + " m");
-        input.close();
+        System.out.print("Jarak : " + jarak + " m");
 
     }
 
@@ -78,7 +75,6 @@ public class sainskalkulator {
 
         double waktu = jarak / kecepatan;
         System.out.println("Waktu: " + waktu + " s");
-        input.close();
 
     }
 }
