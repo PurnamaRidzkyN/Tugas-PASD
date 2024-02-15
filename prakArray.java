@@ -34,6 +34,11 @@ public class prakArray {
         for (int i = 0; i < jumlahMataKuliah; i++) {
             System.out.print("Masukkan nilai Angka untuk MK " + namaMataKuliah[i] + ": ");
             nilaiAngka[i] = input.nextDouble();
+            if ( nilaiAngka[i]<0 || nilaiAngka[i]>100){
+                System.out.println("Nilai Tidak Valid");
+                i--;
+                continue;
+            }
             // Hitung nilai setara dan simpan nilai huruf
             nilaiSetara[i] = hitungNilaiSetara(nilaiAngka[i]);
             nilaiHuruf[i] = hitungNilaiHuruf(nilaiAngka[i]);
@@ -59,7 +64,8 @@ public class prakArray {
         }
         ip /= jmlSks;
         System.out.println("================================");
-        System.out.println("IP : " + ip);
+        System.out.printf("IP : %.2f%n", ip);
+        input.close();
 
     }
 
@@ -88,8 +94,6 @@ public class prakArray {
         } else if (nilaiAkhir <= 100) {
             nSetara = 4;
         }
-
-        // Menyimpan nilai huruf ke dalam array
 
         return nSetara;
     }

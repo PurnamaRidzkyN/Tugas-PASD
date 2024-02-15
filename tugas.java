@@ -25,5 +25,7 @@ public class tugas {
                 }
             }
         }
+        input.close();
+
     }
 }

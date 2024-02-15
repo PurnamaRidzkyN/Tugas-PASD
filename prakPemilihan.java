@@ -67,6 +67,8 @@ public class prakPemilihan {
             }else{
                 System.out.println("LULUS");
             }
+            input.close();
+
         }
     }
 }

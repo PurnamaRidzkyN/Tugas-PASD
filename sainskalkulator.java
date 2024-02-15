@@ -36,6 +36,8 @@ public class sainskalkulator {
             if (selesai.equalsIgnoreCase("y")){
                 break;
             }
+            input.close();
+
         }
     }
 
@@ -48,6 +50,8 @@ public class sainskalkulator {
 
         double Kecepatan = Jarak / waktu;
         System.out.println("Kecepatan : " + Kecepatan+("m/s"));
+        input.close();
+
     }
 
     private static void hitungJarak() {
@@ -59,6 +63,8 @@ public class sainskalkulator {
 
         double jarak = Kecepatan * waktu;
         System.out.println("Kecepatan : " + jarak + " m");
+        input.close();
+
     }
 
     private static void hitungWaktu() {
@@ -72,5 +78,7 @@ public class sainskalkulator {
 
         double waktu = jarak / kecepatan;
         System.out.println("Waktu: " + waktu + " s");
+        input.close();
+
     }
 }
